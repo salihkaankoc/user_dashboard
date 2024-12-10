@@ -31,6 +31,7 @@ npm start
 
 
 
+
 ## Test Kullanıcıları
 
 - Admin: admin@example.com / pass123123
@@ -45,6 +46,8 @@ npm start
 
 ## Proje Yapısı
 
+
+src/
 ├── components/ # Yeniden kullanılabilir bileşenler
 ├── contexts/ # Context API tanımlamaları
 ├── hooks/ # Custom hooks
@@ -56,11 +59,16 @@ npm start
 
 ## Özellik Detayları
 
+
+## Özellik Detayları
+
 ### Kullanıcı Yönetimi
 - Kullanıcı listeleme (tüm roller)
 - Kullanıcı ekleme (sadece Admin)
 - Kullanıcı düzenleme (Admin ve Editor)
 - Kullanıcı silme (sadece Admin)
+  - Silme işlemi öncesi onay modal'ı
+  - Geri alınamaz işlem uyarısı
 
 ### Arama ve Filtreleme
 - İsim ve email'e göre arama
@@ -74,6 +82,8 @@ npm start
 - Error messages
 - Success notifications
 - Modal dialoglar
+  - Edit/Create form modal'ı
+  - Delete confirmation modal'ı
 - Form validasyonları
 
 ### Güvenlik
