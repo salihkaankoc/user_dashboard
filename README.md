@@ -1,6 +1,5 @@
 # User Management Dashboard
 
-Modern ve rol tabanlı bir kullanıcı yönetim paneli uygulaması. React kullanılarak geliştirilmiş bu dashboard, farklı rol seviyelerine sahip kullanıcıların yönetimini sağlar.
 
 ## Özellikler
 
