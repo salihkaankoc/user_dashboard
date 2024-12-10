@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# User Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern ve rol tabanlı bir kullanıcı yönetim paneli uygulaması. React kullanılarak geliştirilmiş bu dashboard, farklı rol seviyelerine sahip kullanıcıların yönetimini sağlar.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+-  Rol tabanlı yetkilendirme (Admin, Editor, Viewer)
+-  Kullanıcı yönetimi (CRUD işlemleri)
+-  Modern ve responsive tasarım
+-  Arama ve filtreleme
+-  Sayfalama
+-  Optimized performans
+-  Form validasyonları
+-  Error handling
 
-### `npm start`
+## Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18
+- React Router v6
+- Context API
+- Modern CSS
+- Font Awesome
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kurulum ve Çalıştırma
 
-### `npm test`
+Bağımlılıkları yükleyin
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uygulamayı başlatın
+npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Test Kullanıcıları
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Admin: admin@example.com / pass123123
+- Editor: editor@example.com / pass123123
+- Viewer: viewer@example.com / pass123123
 
-### `npm run eject`
+## Rol Yetkileri
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Admin**: Tüm işlemler (create, read, update, delete)
+- **Editor**: Görüntüleme ve düzenleme
+- **Viewer**: Sadece görüntüleme
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Proje Yapısı
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+├── components/ # Yeniden kullanılabilir bileşenler
+├── contexts/ # Context API tanımlamaları
+├── hooks/ # Custom hooks
+├── pages/ # Sayfa bileşenleri
+├── services/ # API servisleri
+└── styles/ # Global CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Özellik Detayları
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Kullanıcı Yönetimi
+- Kullanıcı listeleme (tüm roller)
+- Kullanıcı ekleme (sadece Admin)
+- Kullanıcı düzenleme (Admin ve Editor)
+- Kullanıcı silme (sadece Admin)
 
-### Code Splitting
+### Arama ve Filtreleme
+- İsim ve email'e göre arama
+- Role göre filtreleme
+- Anlık arama sonuçları
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### UI/UX
+- Modern tasarım
+- Responsive layout
+- Loading states
+- Error messages
+- Success notifications
+- Modal dialoglar
+- Form validasyonları
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Güvenlik
+- Role-based access control
+- Protected routes
+- Error boundary
+- Input validasyonları
